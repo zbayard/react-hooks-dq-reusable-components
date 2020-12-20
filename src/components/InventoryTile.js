@@ -5,7 +5,7 @@ import React from "react";
 
 function InventoryTile({ potion, sell, children }) {
   return (
-    <div key={potion.id} className="inventory-card">
+    <div className="inventory-card">
       <div onClick={() => sell(potion.id)} className="image-wrapper">
         <img className="image" alt={potion.name} src={potion.image_url} />
       </div>
